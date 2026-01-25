@@ -1,2 +1,99 @@
 # BuildIso
 No way! Iso generator?
+# BuildIso – A Lightweight ISO Builder for OSDev
+
+**BuildIso** is a tiny, portable, dependency‑free ISO generator designed for OS developers.  
+It integrates directly into Visual Studio as an External Tool and produces a bootable ISO with a single click.
+
+No VSIX.  
+No workloads.  
+No installers.  
+Just one `.exe` dropped into your project folder.
+
+---
+
+## 🚀 Features
+
+- **Portable** – one single executable, no dependencies  
+- **Bootable ISO generation** (El Torito, No‑Emulation)  
+- **Automatic project name detection**  
+- **Works with any OSDev project structure**  
+- **Integrates into Visual Studio External Tools**  
+- **Zero configuration required**
+
+---
+
+## 📁 Project Structure
+
+Your OS project should look like this:
+
+MyOS/
+├── BuildIso.exe
+├── boot/
+│    └── boot.bin
+├── iso_root/
+│    └── KERNEL.BIN
+└── MyOS.csproj
+
+
+- `boot/boot.bin` → your 512‑byte bootloader  
+- `iso_root/` → all files to include in the ISO (kernel, config, etc.)
+
+---
+
+## 🛠️ Visual Studio Integration
+
+1. Open **Tools → External Tools…**
+2. Click **Add**
+3. Fill in the fields:
+
+- **Title:** `Build ISO`
+- **Command:** `$(ProjectDir)\BuildIso.exe`
+- **Arguments:** `$(ProjectDir)`
+- **Initial Directory:** `$(ProjectDir)`
+
+Click **OK**.
+
+You now have a **Build ISO** entry in the Tools menu.
+
+(Optional) Add it to the toolbar for one‑click builds.
+
+---
+
+## 📦 How It Works
+
+BuildIso:
+
+1. Reads the project directory passed by Visual Studio  
+2. Detects the `.csproj` file  
+3. Extracts the project name  
+4. Recursively adds all files from `iso_root/`  
+5. Loads `boot/boot.bin` as the El Torito boot image  
+6. Generates a bootable ISO named:
+
+<ProjectName>.iso
+
+
+in the project root.
+
+---
+
+## 🧩 Requirements
+
+- .NET 6/7/8/9/10 runtime  
+- A valid 512‑byte bootloader (`boot.bin`)  
+- A populated `iso_root/` directory  
+
+---
+
+## 📜 License
+
+MIT License.  
+Feel free to modify, fork, and improve.
+
+---
+
+## ❤️ Credits
+
+Created by **Src**, with guidance and support from Copilot.  
+Designed to be simple, portable, and OSDev‑friendly.
