@@ -97,3 +97,9 @@ Feel free to modify, fork, and improve.
 
 Created by **Src**, with guidance and support from Copilot.  
 Designed to be simple, portable, and OSDev‑friendly.
+
+---
+
+## 🦄 Support
+
+For support me you can donate : **https://srcfrcg.itch.io/buildiso**
