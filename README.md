@@ -116,3 +116,9 @@ Planned improvements and enhancements coming soon.
 ## 📬 Contact
 
 BuildIso@proton.me
+
+---
+
+## 🌍 Web
+
+https://buildiso.pages.dev/ What is this? It's a website where you can browse and learn more. If you have any suggestions, feel free to contact me via email or share them in the discussions or issues. This site is in beta. Enjoy!
