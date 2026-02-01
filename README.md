@@ -119,6 +119,16 @@ BuildIso@proton.me
 
 ---
 
+# 🚀 This repository has moved
+
+The official BuildIso repository is now hosted at:
+
+👉 [BuildIso](https://github.com/BuildIso/BuildIso)
+
+This repository is archived and no longer maintained.
+
+---
+
 ## 🌍 Web
 
 https://buildiso.pages.dev/ What is this? It's a website where you can browse and learn more. If you have any suggestions, feel free to contact me via email or share them in the discussions or issues. This site is in beta. Enjoy!
