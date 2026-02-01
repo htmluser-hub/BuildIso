@@ -110,3 +110,9 @@ For support me you can donate : **https://srcfrcg.itch.io/buildiso**
 
 February 8, 2026.
 Planned improvements and enhancements coming soon.
+
+---
+
+## 📬 Contact
+
+BuildIso@proton.me
